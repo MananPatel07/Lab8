@@ -16,4 +16,8 @@ public class MyStack<E> extends ArrayList<E> {
         return e;
     }
 
+    public E peek() {
+        if (isEmpty()) throw new EmptyStackException();
+        return get(size() - 1);
+    }
 }
