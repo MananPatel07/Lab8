@@ -12,19 +12,17 @@ public class MyStack<E> extends ArrayList<E> {
     }
 
     public void push(E e) {
-
-        add(e);
+        this.add(e);
     }
 
     public E pop() {
         if (isEmpty()) throw new EmptyStackException();
-        E e = get(size() - 1);
-        remove(size() -1 );
-        return e;
+        return this.remove(this.size() - 1);
     }
 
     public E peek() {
         if (isEmpty()) throw new EmptyStackException();
-        return get(size() - 1);
+        return this.get(this.size() - 1);
     }
+
 }
