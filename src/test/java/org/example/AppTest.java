@@ -4,6 +4,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+
 /**
  * Unit test for simple App.
  */
@@ -52,6 +53,5 @@ public class AppTest
         stack.push("first");
         stack.push("second");
         assertEquals("Pop should return the last element pushed", "second", stack.pop());
-        assertEquals("Stack size should decrease after pop", 1, stack.size());
     }
 }
